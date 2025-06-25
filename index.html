@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join TapRizz Waitlist</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+    }
+    input[type="email"] {
+      padding: 12px;
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #00ff95;
+      color: black;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background-color: #00e383;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .success-message {
+      color: #00ff95;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Be the First to Try TapRizz</h1>
+    <form action="https://formspree.io/f/xanjlowp" method="POST" onsubmit="showMessage()">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Join Waitlist</button>
+    </form>
+    <p class="success-message" id="success">Thanks! We'll notify you when it's ready 🚀</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      setTimeout(() => {
+        document.getElementById("success").style.display = "block";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
